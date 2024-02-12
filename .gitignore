@@ -1,0 +1,5 @@
+**/tmp
+.ipynb_checkpoints
+.vscode
+.jupyter
+.__pycache__
