@@ -24,7 +24,7 @@ __global__ void matrix_mul_kernel_row(const float* matrix_a, const float* matrix
     }
 }
 
-torch::Tensor matrix_mul_row(torch::Tensor matrix_a, torch::Tensor matrix_b){
+torch::Tensor matrix_mul_row(torch::Tensor matrix_a, torch::Tensor matrix_b) {
 
     const auto width = matrix_a.size(0);
     auto result =  torch::empty_like(matrix_a);
@@ -51,7 +51,7 @@ __global__ void matrix_mul_kernel_col(const float* matrix_a, const float* matrix
     }
 }
 
-torch::Tensor matrix_mul_col(torch::Tensor matrix_a, torch::Tensor matrix_b){
+torch::Tensor matrix_mul_col(torch::Tensor matrix_a, torch::Tensor matrix_b) {
 
     const auto width = matrix_a.size(0);
     auto result =  torch::empty_like(matrix_a);
