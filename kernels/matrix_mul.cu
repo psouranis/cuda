@@ -24,6 +24,7 @@ __global__ void matrix_mul_kernel_row(const float* matrix_a, const float* matrix
     }
 }
 
+
 torch::Tensor matrix_mul_row(torch::Tensor matrix_a, torch::Tensor matrix_b) {
 
     const auto width = matrix_a.size(0);
